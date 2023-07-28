@@ -1,0 +1,17 @@
+---
+# tasks file for common
+- name: Change repository Ubuntu 20.10 - Setup 'web' Roles
+  copy:
+    src: sources.list
+    dest: /etc/apt/
+    backup: yes
+    
+#- name: Update repository and Upgrade packages
+#  apt:
+#    upgrade: dist
+#    update_cache: yes
+    
+#- name: Setup timezone to Evropa/Moscow
+#  timezone:
+#    name: Evropa/Moscow
+#    state: latest

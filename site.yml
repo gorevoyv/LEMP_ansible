@@ -1,0 +1,10 @@
+---
+
+- hosts: test2
+  remote_user: root
+  become: yes
+
+  roles:
+    - common
+    - web
+    - db
